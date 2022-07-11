@@ -7,6 +7,20 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+#title{
+	font-size: 20px;
+	font-weight: bold;
+	/* text-align: justify;
+	text-justify: inter-word; */
+}
+
+#justify_text{
+	text-align: justify;
+	text-justify: inter-word;
+	padding-right:20px;
+	padding-left:20px;
+}
+
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -273,6 +287,8 @@ input, select, textarea {
 		flex-wrap: wrap;
 		box-sizing: border-box;
 		align-items: stretch;
+		flex-direction: column;
+		justify-content: center;
 	}
 
 		.row > * {
@@ -336,7 +352,7 @@ input, select, textarea {
 		}
 
 		.row > .col-4 {
-			width: 33.33333%;
+			width: 98%;
 		}
 
 		.row > .off-4 {
@@ -1749,6 +1765,13 @@ input, select, textarea {
 		.row > section, .row > article {
 			margin-bottom: 0;
 		}
+	
+	article
+	{
+		display: flex;
+		flex-direction: row;
+		background-color: white;
+	}
 
 /* Image */
 
@@ -1760,6 +1783,7 @@ input, select, textarea {
 		.image img {
 			display: block;
 			width: 100%;
+
 		}
 
 		.image.avatar48 {
@@ -1774,8 +1798,10 @@ input, select, textarea {
 			}
 
 		.image.fit {
-			display: block;
-			width: 100%;
+			display: flex;
+			width: 40%;
+			align-items: center;
+			justify-content: center;
 		}
 
 		.image.featured {
@@ -1997,11 +2023,42 @@ input, select, textarea {
 			margin: 0;
 			padding: 1em 0 1em 0;
 			font-size: 0.8em;
+			width: 100%;
 		}
 
 			.item header h3 {
 				font-size: 1em;
 			}
+	
+	.item2 {
+		box-shadow: 0 0.05em 0.15em 0 rgba(0, 0, 0, 0.05);
+		margin-bottom: 40px;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		}
+		
+		.item2 header {
+			background: #fff;
+			margin: 0;
+			padding: 1em 0 1em 0;
+			font-size: 0.8em;
+			width: 100%;
+			font-size: 20px;
+			font-weight: bold;
+			text-align: justify;
+			text-justify: inter-word;
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			}
+		
+			.item2 header h3 {
+				font-size: 1em;
+			}
+
 
 /* Icons */
 
